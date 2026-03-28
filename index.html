@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="gu">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ગુજરાતી ટ્રેડર</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>2XGROWTH</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
 <!-- META PIXEL -->
 <script>
@@ -23,236 +23,318 @@ s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)
 }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init','926038779920023');
-fbq('track','PageView');
+fbq('init', '926038779920023');
 </script>
 
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=926038779920023&ev=PageView&noscript=1"/>
+</noscript>
+
 <style>
+*{margin:0;padding:0;box-sizing:border-box}
+
 body{
-  margin:0;
   font-family:'Poppins',sans-serif;
-  background:radial-gradient(circle at top,#0f1226,#02040f 80%);
+  background:#000;
   color:#fff;
-}
-
-/* CONTAINER */
-.container{
-  max-width:420px;
-  margin:auto;
-  padding:30px 20px;
-}
-
-/* CARD */
-.card{
-  background:linear-gradient(180deg,#0c1028,#050816);
-  border-radius:30px;
-  padding:40px 25px;
   text-align:center;
-  box-shadow:
-    0 30px 100px rgba(0,0,0,0.9),
-    0 0 80px rgba(255,215,0,0.2);
-  border:1px solid rgba(255,215,0,0.2);
-  animation:fadeIn 1s ease;
 }
 
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(20px);}
-  to{opacity:1;transform:translateY(0);}
+/* HERO */
+.hero{
+  padding:40px 20px 30px;
 }
 
-/* LOGO FIXED */
-.logo{
-  width:120px;
-  height:120px;
+/* LOGO */
+.hero img{
+  width:130px;
+  height:130px;
   border-radius:50%;
   object-fit:cover;
-  display:block;
-  margin:0 auto 20px auto;
-  border:3px solid rgba(255,255,255,0.9);
+  border:3px solid rgba(255,255,255,0.2);
   box-shadow:
-    0 0 25px rgba(255,215,0,0.9),
-    0 0 60px rgba(255,215,0,0.5),
-    0 0 120px rgba(255,215,0,0.3),
-    inset 0 0 20px rgba(255,255,255,0.2);
+    0 0 20px rgba(255,215,0,0.8),
+    0 0 40px rgba(0,198,255,0.4);
+  margin-bottom:16px;
 }
-
-/* TEXT */
-h1{
-  font-size:28px;
-  font-weight:800;
-}
-.tag{
-  font-size:14px;
-  color:#cfd3ff;
-  margin-bottom:10px;
-}
-.trust{
-  font-size:13px;
-  color:#ffd700;
-  margin-bottom:15px;
-}
-
-/* TRUST BOX */
-.trustbox{
-  background:rgba(255,255,255,0.05);
-  border-radius:15px;
-  padding:15px;
-  margin:15px 0;
-  font-size:13px;
-  text-align:left;
-}
-.trustbox div{
-  margin:6px 0;
-}
-
+  
+/* NAME */
+.trader-name{
+   font-size: 30px;
+        margin-top: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        animation: fadeDown 1.4s ease-in-out;
+    }
+ 
 /* CTA */
 .cta{
-  display:block;
-  padding:18px;
-  border-radius:60px;
-  background:linear-gradient(180deg,#ffd700,#ffb300);
-  color:#000;
+  display:inline-block;
+  width:100%;
+  max-width:360px;
+  padding:16px;
+  margin:0 auto 22px;
+  font-size:17px;
   font-weight:800;
+  border-radius:50px;
+  background:linear-gradient(90deg,#ff0080,#8e2de2,#00c6ff);
+  color:#fff;
   text-decoration:none;
-  margin:25px 0;
-  box-shadow:
-    0 20px 60px rgba(255,215,0,0.6),
-    inset 0 2px 6px rgba(255,255,255,0.5);
-  transition:.3s;
+  box-shadow:0 10px 30px rgba(0,0,0,.7);
+  transition:.2s ease;
 }
 .cta:hover{
-  transform:scale(1.07);
+  transform:scale(1.03);
+  box-shadow:0 0 30px rgba(0,198,255,.9);
 }
 
-/* FEATURES */
-.features{
+/* TITLE */
+.hero h1{
+  font-size:30px;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+.hero p{
+  font-size:15px;
+  color:#ccc;
+}
+
+/* INFO */
+.info{
+  padding:28px 20px;
+}
+
+.card{
+  background:linear-gradient(180deg,#0f1629,#05070d);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:0 0 30px rgba(0,255,255,.12);
+}
+
+.point{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin:14px 0;
+}
+
+.point i{
+  font-size:18px;
+  color:#00c6ff;
+}
+
+.point span{
+  font-size:15px;
   text-align:left;
-  margin-top:20px;
-}
-.features div{
-  margin:12px 0;
-  font-size:14px;
-}
-.features i{
-  color:#ffd700;
-  margin-right:8px;
 }
 
-/* TESTIMONIAL */
-.testimonial{
-  margin-top:20px;
+/* FOOTER */
+.footer{
+  padding:20px 10px;
   font-size:13px;
-  color:#ddd;
-  font-style:italic;
-}
-
-/* LIVE */
-#liveActivity{
-  margin-top:15px;
-  font-size:13px;
-  color:#00ffcc;
-}
-
-/* DISCLAIMER */
-.disclaimer{
-  margin-top:20px;
-  font-size:11px;
-  color:#777;
+  color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<section class="hero">
+
+  <img src="https://res.cloudinary.com/dqhbtoh8u/image/upload/v1774449836/WhatsApp_Image_2025-12-29_at_18.24.42_mklank.jpg"
+       alt="INDIAN TRADER Logo">
+  <div class="trader-name">
+    🤴𝐆𝐔𝐉𝐀𝐑𝐀𝐓𝐈 𝐓𝐑𝐀𝐃𝐄𝐑🤴
+  </div>
+                                                                                                                                                                                                                                                                                                 
+
+  <!-- TELEGRAM JOIN BUTTON -->
+  <a href="https://t.me/+nq_TajYx7OlhZDk1"
+     target="_blank"
+     class="cta subscribe-btn">
+    <i class="fab fa-telegram-plane"></i> 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌
+  </a>
+
+  <h1></h1>
+  <p>Free Signals • Daily Analysis • Smart Risk Management</p>
+
+</section>
+
+<section class="info">
   <div class="card">
 
-    <!-- LOGO (FIXED + FALLBACK) -->
-    <img src="https://res.cloudinary.com/dqhbtoh8u/image/upload/v1774449836/WhatsApp_Image_2025-12-29_at_18.24.42_mklank.jpg"
-         class="logo"
-         alt="logo"
-         onerror="this.src='https://i.imgur.com/2DhmtJ4.png';">
-
-    <h1>ગુજરાતી ટ્રેડર</h1>
-    <div class="tag">Options Learning • Smart Trading</div>
-
-    <div class="trust">✔ 100% Learning Based ✔ No Fake Promises ✔ Trusted by Traders</div>
-
-    <!-- TRUST -->
-    <div class="trustbox">
-      <div>✔ 50000+ Traders Connected</div>
-      <div>✔ Daily Market Analysis</div>
-      <div>✔ Beginner Friendly Content</div>
-      <div>✔ Risk Management Focus</div>
+    <div class="point">
+      <i class="fa-solid fa-chart-line"></i>
+      <span>Intraday, Options, NIFTY & BANKNIFTY Calls</span>
     </div>
 
-    <!-- CTA -->
-    <a href="https://t.me/+nq_TajYx7OlhZDk1" target="_blank" class="cta" id="joinBtn">
-      <i class="fa-brands fa-telegram"></i> JOIN FREE TELEGRAM
-    </a>
-
-    <!-- FEATURES -->
-    <div class="features">
-      <div><i class="fa-solid fa-chart-line"></i> Nifty • BankNifty Analysis</div>
-      <div><i class="fa-solid fa-bullseye"></i> Entry • Target • Stoploss</div>
-      <div><i class="fa-solid fa-shield-halved"></i> Risk Management System</div>
-      <div><i class="fa-solid fa-book-open"></i> Beginner to Advanced Learning</div>
+    <div class="point">
+      <i class="fa-solid fa-bullseye"></i>
+      <span>Accurate Entry, Exit & Target Levels</span>
     </div>
 
-    <!-- TESTIMONIAL -->
-    <div class="testimonial">
-      ⭐ "Best Gujarati trading community for learning discipline & strategy"
+    <div class="point">
+      <i class="fa-solid fa-shield"></i>
+      <span>Risk Management Focused Strategy</span>
     </div>
 
-    <div id="liveActivity">🟢 Loading activity...</div>
-
-    <div class="disclaimer">
-      Educational purpose only. Trading involves risk.
+    <div class="point">
+      <i class="fa-solid fa-fire"></i>
+      <span>Daily Free & Premium Market Analysis</span>
     </div>
 
   </div>
+</section>
+
+<div class="footer">
+  © 2026 HARSH BHAGAT • All Rights Reserved
 </div>
 
-<!-- ONE TIME TRACKING -->
+<!-- TRACKING SCRIPT -->
 <script>
-const LEAD_KEY = "telegram_lead_tracked";
-const btn = document.getElementById('joinBtn');
+const PAGEVIEW_KEY = "gt_pageview_tracked";
+const SUBSCRIBE_KEY = "gt_subscribe_tracked";
 
-btn.addEventListener('click', function () {
-
-    if (localStorage.getItem(LEAD_KEY) === "true") return;
-
-    // disable spam click UX
-    btn.style.pointerEvents = "none";
-    btn.innerText = "Joining...";
-
-    fbq('track', 'Lead');
-    fbq('trackCustom', 'TelegramJoin', {
-        source: 'Landing Page',
-        platform: 'Telegram'
-    });
-
-    localStorage.setItem(LEAD_KEY, "true");
-});
-</script>
-
-<!-- LIVE ACTIVITY -->
-<script>
-const names = [
-"Amit Patel","Rahul Sharma","Vikram Singh","Rohit Mehta","Karan Gupta",
-"Suresh Yadav","Deepak Kumar","Manish Patel","Arjun Singh","Nitin Sharma"
-];
-
-function showActivity(){
-    const randomName = names[Math.floor(Math.random()*names.length)];
-    const time = Math.floor(Math.random()*5)+1;
-    document.getElementById("liveActivity").innerHTML =
-    "🟢 " + randomName + " joined " + time + " min ago";
+/* PAGE VIEW - ONLY ONCE */
+if (!localStorage.getItem(PAGEVIEW_KEY)) {
+    fbq('track', 'PageView');
+    localStorage.setItem(PAGEVIEW_KEY, "true");
+    console.log("✅ PageView tracked");
 }
 
-setInterval(showActivity,3000);
-showActivity();
+/* TELEGRAM JOIN - ONLY ONCE */
+document.querySelector(".subscribe-btn").addEventListener("click", function () {
+
+    if (!localStorage.getItem(SUBSCRIBE_KEY)) {
+
+        fbq('track', 'Lead');
+        fbq('trackCustom', 'TelegramSubscribe', {
+            source: 'Landing Page',
+            platform: 'Telegram'
+        });
+
+        localStorage.setItem(SUBSCRIBE_KEY, "true");
+        console.log("✅ Subscribe tracked");
+    }
+});
 </script>
 
 </body>
 </html>
+
+<!-- ===== DETAILS SECTION START (NO PRICING) ===== -->
+
+<style>
+.details-section{
+    padding:60px 20px;
+    background: linear-gradient(135deg,#00c6ff,#0072ff,#ff6a00);
+    color:#fff;
+    text-align:center;
+}
+
+/* FEATURES */
+.details-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.details-card{
+    background:rgba(255,255,255,0.12);
+    margin:15px;
+    padding:25px;
+    width:260px;
+    border-radius:18px;
+    backdrop-filter:blur(12px);
+    transition:0.3s;
+}
+
+.details-card:hover{
+    transform:translateY(-8px) scale(1.03);
+}
+
+.details-card h3{
+    margin-bottom:10px;
+}
+
+/* BENEFITS */
+.benefits{
+    margin-top:50px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+}
+
+.benefits li{
+    margin:12px 0;
+    font-size:16px;
+}
+
+/* TRUST */
+.trust{
+    margin-top:50px;
+    font-size:15px;
+    opacity:0.9;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .details-card{
+        width:90%;
+    }
+}
+</style>
+
+<section class="details-section">
+
+    <h1>🔥 Premium Trading Details</h1>
+    <p>Professional Trading Signals + Strategy + Risk Management</p>
+
+    <!-- FEATURES -->
+    <div class="details-grid">
+
+        <div class="details-card">
+            <h3>📊 Intraday Signals</h3>
+            <p>Daily high-quality stock & index calls with proper levels.</p>
+        </div>
+
+        <div class="details-card">
+            <h3>💰 Options Trading</h3>
+            <p>BankNifty & Nifty strategies with clear entry/exit.</p>
+        </div>
+
+        <div class="details-card">
+            <h3>🎯 Accuracy Based</h3>
+            <p>Strategy-focused trades with risk management.</p>
+        </div>
+
+        <div class="details-card">
+            <h3>📚 Learning Support</h3>
+            <p>Understand market while earning consistently.</p>
+        </div>
+
+    </div>
+
+    <!-- BENEFITS -->
+    <ul class="benefits">
+        <li>✔ 2–5 Premium Calls Daily</li>
+        <li>✔ Proper Stop Loss & Target</li>
+        <li>✔ Live Market Updates</li>
+        <li>✔ Risk Management Guidance</li>
+        <li>✔ Beginner Friendly + Pro Level Strategy</li>
+    </ul>
+
+    <!-- TRUST -->
+    <div class="trust">
+        <p>⚠️ Disclaimer: Stock market investments are subject to market risks. No guaranteed profits.</p>
+        <p>✔ Focus on strategy, discipline & consistency</p>
+    </div>
+
+</section>
+
+<!-- ===== DETAILS SECTION END ===== -->
+```
